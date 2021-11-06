@@ -1,10 +1,11 @@
-# No Pay Ending No Win
-
-SALAMAT SHOPEE!!!, NASA LAZADA YAN, TATAWAG PA TAYO!!!, KUYA WILL!!!, PA ISKO AXIE!!!!!!
-
-## Angular13
+# Angular13
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0
+
+## READ ME!
+
+There's no error in my code perfectly running, but there's a problem in my fake-rest-api-jwt-json-server that it's not responding in angular project but in `postman` it's responding.
+Please help me fix this because I'm a newbie in Angular. TIA
 
 ## Development server
 
