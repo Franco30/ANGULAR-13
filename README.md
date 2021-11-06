@@ -1,4 +1,8 @@
-# Angular13
+# No Pay Ending No Win
+
+SALAMAT SHOPEE!!!, NASA LAZADA YAN, TATAWAG PA TAYO!!!, KUYA WILL!!!, PA ISKO AXIE!!!!!!
+
+## Angular13
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0
 
