@@ -1,0 +1,24 @@
+<div class="row mb-3">
+
+    <div class="table table-responsive">
+      <table class="table table-bordered" *ngIf="todo && todo.length">
+        <thead>
+          <tr class="table-dark text-center">
+            <th>Task</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let todos of todo" class="text-center">
+            <td>{{ todos.task }}</td>
+            <td>
+              <button (click)="edit(todos.id)" class="btn btn-primary">Edit</button>
+              &nbsp;
+              <button (click)="delete(todos.id)" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>

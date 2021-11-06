@@ -1,0 +1,36 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { EmployeeService } from './employee.service';
+import { IEmployee } from './IEmployee';
+
+@Component({
+  selector: 'app-list-employees',
+  templateUrl: './list-employees.component.html',
+  styleUrls: ['./list-employees.component.scss']
+})
+export class ListEmployeesComponent implements OnInit {
+  employees!: IEmployee[];
+
+  constructor(private _employeeService: EmployeeService, private _router: Router) { 
+  }
+
+  ngOnInit(): void {
+    this._employeeService.getEmployees().subscribe(
+      (listEmployees) => this.employees = listEmployees,
+      (err) => console.log(err)
+      );
+  }
+
+  editButtonClick(employeeId: number) {
+    this._router.navigate(['/employees/edit', employeeId]);
+  }
+
+  deleteButtonClick(employeeId: number) {
+    this._employeeService.deleteEmployee(employeeId).subscribe(
+      () => this._router.navigate(['employees']),
+      (err: any) => console.log(err)
+    );
+    this.ngOnInit();
+  }
+
+}

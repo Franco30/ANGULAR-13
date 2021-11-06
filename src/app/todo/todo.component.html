@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="card">
+        <div class="card-header text-white bg-primary mb-3">
+      {{pageTitle}}
+        </div>
+
+
+        <div class="card-body">
+          <form class="form-horizontal" (ngSubmit)="onSubmit()" [formGroup]="todoForm">
+            <div class="row mb-2">
+              <label class="col-sm-2 col-form-label" for="task">Add Task</label>
+
+              <div class="col-md-6">
+
+                <input [ngClass]="{'is-invalid' : t.task.errors && (t.task.touched || t.taskdirty)}" type="text" class="form-control" formControlName="task">
+                <div class="invalid-feedback" *ngIf="t.task.errors?.required">
+                  Task is Required
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+                <button (click)="clearForm()" class="btn btn-dark" type="button">Reset</button>
+                &nbsp;
+                <button class="btn btn-success" type="submit" [disabled]="todoForm.invalid">Save</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="card-footer">
+          <div class="d-grid gap-2 d-md-block">
+            All Right Reserved 2021
+          </div>
+        </div>
+
+      </div>
+
+      <table class="table">
+        <tr>
+          <th style="padding: 10px">FormGroup</th>
+          <th style="padding: 10px">FormControl (task)</th>
+        </tr>
+        <tr>
+          <td style="padding: 10px">
+            touched : {{ todoForm.touched }}
+            <br /> dirty : {{ todoForm.dirty }}
+            <br /> valid : {{ todoForm.valid }}
+            <br /> Form Values : {{todoForm.value | json}}
+          </td>
+          <td style="padding: 10px">
+            touched : {{ todoForm.controls.task.touched }}
+            <br /> dirty : {{ todoForm.controls.task.dirty }}
+            <br /> valid : {{ todoForm.controls.task.valid }}
+            <br /> Task Value : {{todoForm.controls.task.value}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

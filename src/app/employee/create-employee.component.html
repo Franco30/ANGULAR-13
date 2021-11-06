@@ -1,0 +1,213 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="card">
+        <div class="card-header text-white bg-primary mb-3">
+          {{pageTitle}}
+        </div>
+        <form class="form-horizontal" (ngSubmit)="onSubmit()" [formGroup]="employeeForm">
+
+          <div class="card-body">
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="fullName">Full Name</label>
+              <div class="col-md-10">
+                <input [ngClass]="{'is-invalid' : f.fullName.errors && (f.fullName.touched || f.fullName.dirty)}"
+                  id="fullName" type="text" class="form-control" formControlName="fullName">
+                <div class="invalid-feedback" *ngIf="f.fullName.errors && (f.fullName.touched || f.fullName.dirty)">
+                  <div *ngIf="f.fullName.errors?.required">
+                    {{ m.fullName.required }}
+                  </div>
+                  <div *ngIf="f.fullName.errors?.minlength">
+                    {{ m.fullName.min }}
+                  </div>
+                  <div *ngIf="f.fullName.errors?.maxlength">
+                    {{ m.fullName.max }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-10">
+              <label class="col-sm-2 col-form-label" for="contactPreference">Contact Preference</label>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" value="email" formControlName="contactPreference">
+                <label class="form-check-label" for="email">
+                  Email
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" value="phone" formControlName="contactPreference">
+                <label class="form-check-label" for="phone">
+                  Phone
+                </label>
+              </div>
+
+            </div>
+
+            <div formGroupName="emailGroup">
+
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label" for="email">Email</label>
+                <div class="col-md-10">
+                  <input
+                    [ngClass]="{'is-invalid' : this.employeeForm.get('emailGroup.email')?.errors &&
+                  (this.employeeForm.get('emailGroup.email')?.touched || this.employeeForm.get('emailGroup.email')?.dirty || this.employeeForm.get('emailGroup.email')?.value !== '')}"
+                    id="email" type="text" class="form-control" formControlName="email">
+                  <div class="invalid-feedback" *ngIf="this.employeeForm.get('emailGroup.email')?.errors">
+                    <div *ngIf="this.employeeForm.get('emailGroup.email')?.errors?.required">
+                      {{ m.email.required }}
+                    </div>
+                    <div *ngIf="this.employeeForm.get('emailGroup.email')?.errors?.emailDomain">
+                      {{ m.email.emailDomain }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label" for="confirmEmail">Confirm Email</label>
+                <div class="col-md-10">
+                  <input [ngClass]="{'is-invalid' : this.employeeForm.get('emailGroup.confirmEmail')?.errors &&
+                  (this.employeeForm.get('emailGroup.confirmEmail')?.touched || this.employeeForm.get('emailGroup.confirmEmail')?.dirty 
+                  || this.employeeForm.get('emailGroup.confirmEmail')?.value !== '')}" id="confirmEmail" type="text"
+                    class="form-control" formControlName="confirmEmail">
+                  <div class="invalid-feedback" *ngIf="this.employeeForm.get('emailGroup.confirmEmail')?.errors">
+                    <div *ngIf="this.employeeForm.get('emailGroup.confirmEmail')?.errors?.required">
+                      {{m.confirmEmail.required}}
+                    </div>
+                    <div *ngIf="this.employeeForm.get('emailGroup.confirmEmail')?.errors?.mismatchedEmail">
+                      {{ m.emailGroup.emailMismatch }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="phone">Phone</label>
+              <div class="col-md-10">
+                <input [ngClass]="{'is-invalid' : employeeForm.controls.phone.errors}" id="phone" type="text"
+                  class="form-control" formControlName="phone">
+                <div class="invalid-feedback" *ngIf="this.employeeForm.controls.phone.errors">
+                  <div *ngIf="this.employeeForm.controls.phone.errors">
+                    Phone is Required</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="skills"></label>
+              <div class="col-md-10">
+                <button class="btn btn-success" type="button" (click)="addSkillButtonClick()"
+                  [disabled]="employeeForm.get('skills')?.invalid">Add Skill</button>
+              </div>
+            </div>
+
+            <div formArrayName="skills" *ngFor="let skill of s(); let i = index">
+              <hr *ngIf="i>0">
+              <div [formGroupName]="i">
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" [attr.for]="'skillName+i'">Skill</label>
+
+                  <div class="col-md-8">
+                    <input
+                      [ngClass]="{'is-invalid' : skill.get('skillName')?.invalid && skill.get('skillName')?.touched }"
+                      type="text" [id]="'skillName'+i" class="form-control" placeholder="Name"
+                      formControlName="skillName">
+                    <div class="invalid-feedback"
+                      *ngIf="skill.get('skillName')?.errors?.required && skill.get('skillName')?.touched">
+                      {{ m.skillName.required }}
+                    </div>
+                  </div>
+
+                  <div class="col-md-2" *ngIf="l > 1">
+                    <button type="button" class="btn btn-danger btn-sm pull-right" title="Delete Skill"
+                      (click)="removeSkillButtonClick(i)"><i class="bi bi-x-lg"></i></button>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="experienceInYears">Experience</label>
+                  <div class="col-md-10">
+                    <input
+                      [ngClass]="{'is-invalid' : skill.get('experienceInYears')?.invalid && skill.get('experienceInYears')?.touched }"
+                      [id]="'experienceInYears+i'" type="text" class="form-control" placeholder="Experience in Years"
+                      formControlName="experienceInYears">
+                    <div class="invalid-feedback"
+                      *ngIf="skill.get('experienceInYears')?.errors?.required && skill.get('experienceInYears')?.touched">
+                      {{ m.experienceInYears.required }}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-10">
+                  <label class="col-sm-2 col-form-label" [attr.for]="'proficiency+i'">Proficiency</label>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      [ngClass]="{'is-invalid' : skill.get('proficiency')?.invalid && skill.get('proficiency')?.touched }"
+                      type="radio" value="beginner" formControlName="proficiency">
+                    <label class="form-check-label" for="beginner">
+                      Beginner
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      [ngClass]="{'is-invalid' : skill.get('proficiency')?.invalid && skill.get('proficiency')?.touched }"
+                      type="radio" value="intermediate" formControlName="proficiency">
+                    <label class="form-check-label" for="intermediate">
+                      Intermediate
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      [ngClass]="{'is-invalid' : skill.get('proficiency')?.invalid && skill.get('proficiency')?.touched }"
+                      type="radio" value="advanced" formControlName="proficiency">
+                    <label class="form-check-label" for="advanced">
+                      Advanced
+                    </label>
+                  </div>
+                  <div class="invalid-feedback"
+                    *ngIf="skill.get('proficiency')?.errors?.required && skill.get('proficiency')?.touched">
+                    {{ m.proficiency.required }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-footer">
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-success" type="submit" [disabled]="employeeForm.invalid">Save</button>
+              <button class="btn btn-dark" type="button" (click)="onLoadDataClick()">Load Data</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <table class="table">
+        <tr>
+          <th style="padding: 10px">FormGroup</th>
+          <th style="padding: 10px">FormControl (fullName)</th>
+        </tr>
+        <tr>
+          <td style="padding: 10px">
+            touched : {{ employeeForm.touched }}
+            <br /> dirty : {{ employeeForm.dirty }}
+            <br /> valid : {{ employeeForm.valid }}
+            <br /> Form Values : {{employeeForm.value | json}}
+          </td>
+          <td style="padding: 10px">
+            touched : {{ employeeForm.controls.fullName.touched }}
+            <br /> dirty : {{ employeeForm.controls.fullName.dirty }}
+            <br /> valid : {{ employeeForm.controls.fullName.valid }}
+            <br /> FullName Value : {{employeeForm.controls.fullName.value}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

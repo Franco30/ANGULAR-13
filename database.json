@@ -1,0 +1,509 @@
+{
+  "stocks": [
+    {
+      "id": 1,
+      "stockName": "Computer",
+      "quantity": 48
+    },
+    {
+      "id": 2,
+      "stockName": "RAM virtual",
+      "quantity": 40
+    },
+    {
+      "id": 3,
+      "stockName": "regional",
+      "quantity": 47
+    },
+    {
+      "id": 4,
+      "stockName": "Chief",
+      "quantity": 5
+    },
+    {
+      "id": 5,
+      "stockName": "Facilitator well-modulated Cotton",
+      "quantity": 22
+    },
+    {
+      "id": 6,
+      "stockName": "Ball e-markets",
+      "quantity": 75
+    },
+    {
+      "id": 7,
+      "stockName": "models",
+      "quantity": 61
+    },
+    {
+      "id": 8,
+      "stockName": "Home withdrawal",
+      "quantity": 39
+    },
+    {
+      "id": 9,
+      "stockName": "Ball Chips",
+      "quantity": 9
+    },
+    {
+      "id": 10,
+      "stockName": "Avon mesh",
+      "quantity": 81
+    },
+    {
+      "id": 11,
+      "stockName": "extend Tools",
+      "quantity": 68
+    },
+    {
+      "id": 12,
+      "stockName": "Quality Technician",
+      "quantity": 46
+    },
+    {
+      "id": 13,
+      "stockName": "matrix withdrawal",
+      "quantity": 18
+    },
+    {
+      "id": 14,
+      "stockName": "Mall compress Tajikistan",
+      "quantity": 82
+    },
+    {
+      "id": 15,
+      "stockName": "interactive redefine",
+      "quantity": 45
+    },
+    {
+      "id": 16,
+      "stockName": "Bedfordshire",
+      "quantity": 50
+    },
+    {
+      "id": 17,
+      "stockName": "bypassing Sausages",
+      "quantity": 83
+    },
+    {
+      "id": 18,
+      "stockName": "Soap complexity Engineer",
+      "quantity": 42
+    },
+    {
+      "id": 19,
+      "stockName": "withdrawal Mouse Rustic",
+      "quantity": 33
+    },
+    {
+      "id": 20,
+      "stockName": "empower",
+      "quantity": 38
+    },
+    {
+      "id": 21,
+      "stockName": "compress",
+      "quantity": 14
+    },
+    {
+      "id": 22,
+      "stockName": "Fantastic applications",
+      "quantity": 3
+    },
+    {
+      "id": 23,
+      "stockName": "Steel",
+      "quantity": 76
+    },
+    {
+      "id": 24,
+      "stockName": "grow Car",
+      "quantity": 23
+    },
+    {
+      "id": 25,
+      "stockName": "Proactive",
+      "quantity": 58
+    },
+    {
+      "id": 26,
+      "stockName": "Coordinator strategic",
+      "quantity": 49
+    },
+    {
+      "id": 27,
+      "stockName": "Shoes auxiliary Practical",
+      "quantity": 69
+    },
+    {
+      "id": 28,
+      "stockName": "Salad",
+      "quantity": 25
+    },
+    {
+      "id": 29,
+      "stockName": "Licensed state Gloves",
+      "quantity": 94
+    },
+    {
+      "id": 30,
+      "stockName": "override groupware",
+      "quantity": 47
+    },
+    {
+      "id": 31,
+      "stockName": "systemic",
+      "quantity": 93
+    },
+    {
+      "id": 32,
+      "stockName": "Mobility matrix United",
+      "quantity": 32
+    },
+    {
+      "id": 33,
+      "stockName": "Egypt quantifying",
+      "quantity": 33
+    },
+    {
+      "id": 34,
+      "stockName": "Credit",
+      "quantity": 94
+    },
+    {
+      "id": 35,
+      "stockName": "Customer",
+      "quantity": 9
+    },
+    {
+      "id": 36,
+      "stockName": "up system",
+      "quantity": 21
+    },
+    {
+      "id": 37,
+      "stockName": "Movies Concrete",
+      "quantity": 11
+    },
+    {
+      "id": 38,
+      "stockName": "Shoes",
+      "quantity": 48
+    },
+    {
+      "id": 39,
+      "stockName": "Mali",
+      "quantity": 26
+    },
+    {
+      "id": 40,
+      "stockName": "magenta",
+      "quantity": 39
+    },
+    {
+      "id": 41,
+      "stockName": "Rubber",
+      "quantity": 64
+    },
+    {
+      "id": 42,
+      "stockName": "Metal evolve",
+      "quantity": 46
+    },
+    {
+      "id": 43,
+      "stockName": "maximize Hawaii Frozen",
+      "quantity": 15
+    },
+    {
+      "id": 44,
+      "stockName": "Frozen Turkey dynamic",
+      "quantity": 18
+    },
+    {
+      "id": 45,
+      "stockName": "Small",
+      "quantity": 23
+    },
+    {
+      "id": 46,
+      "stockName": "cyan Litas Centralized",
+      "quantity": 58
+    },
+    {
+      "id": 47,
+      "stockName": "transmit",
+      "quantity": 16
+    },
+    {
+      "id": 48,
+      "stockName": "SDD Keyboard",
+      "quantity": 57
+    },
+    {
+      "id": 49,
+      "stockName": "Tasty",
+      "quantity": 57
+    },
+    {
+      "id": 50,
+      "stockName": "Shore",
+      "quantity": 76
+    },
+    {
+      "id": 51,
+      "stockName": "lime",
+      "quantity": 14
+    },
+    {
+      "id": 52,
+      "stockName": "Ergonomic",
+      "quantity": 68
+    },
+    {
+      "id": 53,
+      "stockName": "Open-source",
+      "quantity": 95
+    },
+    {
+      "id": 54,
+      "stockName": "multi-byte Bedfordshire",
+      "quantity": 2
+    },
+    {
+      "id": 55,
+      "stockName": "Direct",
+      "quantity": 68
+    },
+    {
+      "id": 56,
+      "stockName": "Virginia primary",
+      "quantity": 42
+    },
+    {
+      "id": 57,
+      "stockName": "Buckinghamshire Car Senior",
+      "quantity": 97
+    },
+    {
+      "id": 58,
+      "stockName": "Franc Consultant Plastic",
+      "quantity": 17
+    },
+    {
+      "id": 59,
+      "stockName": "user-centric",
+      "quantity": 91
+    },
+    {
+      "id": 60,
+      "stockName": "Implementation plug-and-play Cloned",
+      "quantity": 20
+    },
+    {
+      "id": 61,
+      "stockName": "Regional",
+      "quantity": 78
+    },
+    {
+      "id": 62,
+      "stockName": "morph",
+      "quantity": 29
+    },
+    {
+      "id": 63,
+      "stockName": "B2C composite cyan",
+      "quantity": 95
+    },
+    {
+      "id": 64,
+      "stockName": "system-worthy",
+      "quantity": 79
+    },
+    {
+      "id": 65,
+      "stockName": "Bedfordshire",
+      "quantity": 72
+    },
+    {
+      "id": 66,
+      "stockName": "azure Drive visionary",
+      "quantity": 58
+    },
+    {
+      "id": 67,
+      "stockName": "e-tailers GB",
+      "quantity": 94
+    },
+    {
+      "id": 68,
+      "stockName": "parsing Kiribati sensor",
+      "quantity": 30
+    },
+    {
+      "id": 69,
+      "stockName": "port Utah",
+      "quantity": 8
+    },
+    {
+      "id": 70,
+      "stockName": "open-source green",
+      "quantity": 76
+    },
+    {
+      "id": 71,
+      "stockName": "Loan",
+      "quantity": 39
+    },
+    {
+      "id": 72,
+      "stockName": "Sausages",
+      "quantity": 90
+    },
+    {
+      "id": 73,
+      "stockName": "Proactive Towels Franc",
+      "quantity": 77
+    },
+    {
+      "id": 74,
+      "stockName": "override digital web-enabled",
+      "quantity": 52
+    },
+    {
+      "id": 75,
+      "stockName": "Awesome",
+      "quantity": 97
+    },
+    {
+      "id": 76,
+      "stockName": "IB",
+      "quantity": 78
+    },
+    {
+      "id": 77,
+      "stockName": "online deposit",
+      "quantity": 66
+    },
+    {
+      "id": 78,
+      "stockName": "Incredible Implementation transmit",
+      "quantity": 99
+    },
+    {
+      "id": 79,
+      "stockName": "Legacy Plastic",
+      "quantity": 32
+    },
+    {
+      "id": 80,
+      "stockName": "Chief Salad",
+      "quantity": 95
+    },
+    {
+      "id": 81,
+      "stockName": "Refined",
+      "quantity": 79
+    },
+    {
+      "id": 82,
+      "stockName": "info-mediaries Car",
+      "quantity": 56
+    },
+    {
+      "id": 83,
+      "stockName": "District Principal",
+      "quantity": 12
+    },
+    {
+      "id": 84,
+      "stockName": "optimize Ball multi-byte",
+      "quantity": 90
+    },
+    {
+      "id": 85,
+      "stockName": "Solutions Vermont",
+      "quantity": 16
+    },
+    {
+      "id": 86,
+      "stockName": "Islands Account",
+      "quantity": 14
+    },
+    {
+      "id": 87,
+      "stockName": "orchestrate intuitive Kids",
+      "quantity": 89
+    },
+    {
+      "id": 88,
+      "stockName": "navigating quantify",
+      "quantity": 42
+    },
+    {
+      "id": 89,
+      "stockName": "primary Orchestrator bypassing",
+      "quantity": 6
+    },
+    {
+      "id": 90,
+      "stockName": "Avon invoice Account",
+      "quantity": 73
+    },
+    {
+      "id": 91,
+      "stockName": "Savings empower",
+      "quantity": 90
+    },
+    {
+      "id": 92,
+      "stockName": "Michigan e-commerce hacking",
+      "quantity": 44
+    },
+    {
+      "id": 93,
+      "stockName": "Creek",
+      "quantity": 43
+    },
+    {
+      "id": 94,
+      "stockName": "Frozen web-readiness Brand",
+      "quantity": 34
+    },
+    {
+      "id": 95,
+      "stockName": "Buckinghamshire Implementation deposit",
+      "quantity": 21
+    },
+    {
+      "id": 96,
+      "stockName": "Response Forward",
+      "quantity": 46
+    },
+    {
+      "id": 97,
+      "stockName": "Towels",
+      "quantity": 28
+    },
+    {
+      "id": 98,
+      "stockName": "Rustic Belize",
+      "quantity": 65
+    },
+    {
+      "id": 99,
+      "stockName": "Gloves enable",
+      "quantity": 82
+    },
+    {
+      "id": 100,
+      "stockName": "Business-focused real-time",
+      "quantity": 96
+    },
+    {
+      "id": 101,
+      "stockName": "Cecon 500 mg",
+      "quantity": 6
+    }
+  ]
+}

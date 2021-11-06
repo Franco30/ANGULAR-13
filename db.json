@@ -1,0 +1,49 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Jesse Franco Latosa",
+      "contactPreference": "email",
+      "email": "francolatosa12@gmail.com",
+      "phone": "",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": "1",
+          "proficiency": "beginner"
+        }
+      ]
+    }
+  ],
+  "todo": [
+    {
+      "id": 1,
+      "task": "Fetch Water"
+    }
+  ],
+  "medicine": [
+    {
+      "id": 1,
+      "medicineType": "Vitamins",
+      "medicineName": "Life Extension",
+      "medicineCategory": "Vitamins"
+    }
+  ],
+  "stocks": [
+    {
+      "id": 1,
+      "stockName": "Ambroxol",
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "stockName": "Conzace",
+      "quantity": 50
+    },
+    {
+      "id": 5,
+      "stockName": "Cecon 500 mg",
+      "quantity": 100
+    }
+  ]
+}

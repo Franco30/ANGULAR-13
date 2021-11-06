@@ -1,0 +1,28 @@
+<div class="row mb-3">
+
+    <div class="table table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="table-dark text-center">
+            <th>Type</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let medicine of allMedicine" class="text-center">
+            <td>{{ medicine.medicineType }}</td>
+            <td>{{ medicine.medicineName }}</td>
+            <td>{{ medicine.medicineCategory }}</td>
+            <td>
+              <!-- <button (click)="edit(medicine._id)" class="btn btn-primary">Edit</button>
+              &nbsp;
+              <button (click)="delete(medicine._id)" class="btn btn-danger">Delete</button> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
